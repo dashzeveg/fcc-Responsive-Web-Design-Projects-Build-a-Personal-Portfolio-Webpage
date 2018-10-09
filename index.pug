@@ -1,0 +1,130 @@
+<html>
+<head>
+  <title>Dashzeveg - Personal Portfolio Webpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Dashzeveg</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#section1">About</a></li>
+          <li><a href="#section2">Portfolio</a></li>
+          <li><a href="#section3">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+</nav>
+<div id="section1" class="container text-center">
+  <h3>Who Am I?</h3>
+  <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-circle" alt="Bird">
+  <h3>I'm an adventurer</h3>
+</div>
+<div id="section2" class="container">
+  <h2 class="text-center">Portfolio</h2>
+  <br />
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://qlip.in/images/YMCA-Realtor-Donation-3.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://qlip.in/images/webgatomalo.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://www.w3schools.com/bootstrap/newyork.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://www.w3schools.com/bootstrap/sanfran.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://www.w3schools.com/bootstrap/paris.jpg" alt="">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://qlip.in/images/webcaballero.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section3" class="container-fluid">
+<div class="container">
+  <h2 class="text-center">CONTACT</h2>
+  <br />
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Ulaanbaatar, MN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- Add Google Maps -->
+<div id="map" style="width:100%;height:400px;"</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEZhMIXgYCvW_aD8rygtNKdmJaLC0y4So&callback=initMap"></script>
+<script>
+function initMap() {
+  var ulaanbaatar = {lat: 47.8913093,106.6216912};
+  var map = new google.maps.Map(document.getElementById('map'), {zoom: 5, center: ulaanbaatar});
+      var marker = new google.maps.Marker({position: ulaanbaatar, map: map});}
+</script>
+</div>
+<div id="section4" class="container">
+<div class="col-sm-6">
+      <h3>About this page</h3>
+      <p>Made with <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br>by <a rel="nofollow" href="https://www.freecodecamp.com/dashzeveg">Dashzeveg</a>.</p>
+</div>
+<div class="col-sm-6">
+      <h3>Around the Web</h3>
+      <ul>
+        <li><a rel="nofollow" class="button social" href="https://www.freecodecamp.com/dashzeveg"><i class="fa fa-fw fa-linkedin"></i></a></li>
+        <li><a rel="nofollow" class="button social" href="https://www.freecodecamp.com/dashzeveg"><i class="fa fa-fw fa-github"></i></a></li>
+        <li><a rel="nofollow" class="button social" href="https://www.freecodecamp.com/dashzeveg"><i class="fa fa-fw fa-twitter"></i></a></li>
+        <li><a rel="nofollow" class="button social" href="https://www.freecodecamp.com/dashzeveg" title="My Flickr"><i class="fa fa-fw fa-facebook"></i></a></li>
+        <li><a rel="nofollow" class="button social" href="https://www.freecodecamp.com/dashzeveg" title="My Flickr"><i class="fa fa-fw fa-flickr"></i></a></li>
+      </ul>
+      </div>
+</div>
+<footer class="container-fluid text-center">© <script>document.write(new Date().getFullYear())</script> by <a href="https://www.freecodecamp.com/dashzeveg">Dashzeveg</a>. All Rights Reversed.
+</footer>
+</body>
+</html>
